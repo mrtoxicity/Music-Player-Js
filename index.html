@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Music Player</title>
+
+    <!-- CSS FILE -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="top-bar">
+        <img class="heart" src="icons/Heart.svg" alt="" />
+        <span>Now Playing</span>
+        <img class="plus" src="icons/plus.svg" alt="" />
+      </div>
+
+      <div class="img-area">
+        <img src="" alt="" />
+      </div>
+
+      <div class="song-details">
+        <p class="name"></p>
+
+        <p class="artist"></p>
+      </div>
+
+      <div class="progress-area">
+        <div class="progress-bar">
+          <audio id="main-audio" src=""></audio>
+        </div>
+        <div class="song-timer">
+          <span class="current-time">0:00</span>
+          <span class="max-duration">0:00</span>
+        </div>
+        <audio id="main-audio" src=""></audio>
+      </div>
+
+      <div class="controls">
+        <img id="repeat-plist" src="icons/repeat.svg" title="playlist looped" />
+        <img id="prev" src="icons/fastRewind.svg" alt="" />
+
+        <div class="play-pause">
+          <img id="playpause" src="icons/play.svg" alt="" />
+        </div>
+
+        <img src="icons/fastForward.svg" alt="" id="next" />
+        <img src="icons/queueMusic.svg" alt="" id="more-music" />
+      </div>
+
+      <div class="music-list">
+        <div class="header">
+          <div class="row">
+            <img class="list" src="icons/queueMusic2.svg" alt="" />
+            <span>Music List</span>
+          </div>
+          <img id="close" src="icons/close.svg" alt="" />
+        </div>
+        <ul></ul>
+      </div>
+    </div>
+    <script src="js/music-list.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
